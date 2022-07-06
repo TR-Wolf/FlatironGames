@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6994b20d-b462-423a-892c-97a0833fc299" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/FlatironGames/FlatironGames.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlatironGames/out/production/FlatironGames/FlatironGames.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlatironGames/out/production/FlatironGames/src/FlatironGames.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlatironGames/out/production/FlatironGames/src/MultipleChoiceTriviaQuestion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlatironGames/out/production/FlatironGames/src/SeansTriviaQuiz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlatironGames/out/production/FlatironGames/src/TriviaQuestion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlatironGames/out/production/FlatironGames/src/TriviaQuiz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlatironGames/src/FlatironGames.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlatironGames/src/MultipleChoiceTriviaQuestion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlatironGames/src/SeansTriviaQuiz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlatironGames/src/TriviaQuestion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlatironGames/src/TriviaQuiz.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Ba99OHYSYy3jTDlWPFd7lhGwHK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/wolf/Documents/FlatironGames",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.FlatironGames">
+    <configuration name="FlatironGames" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FlatironGames" />
+      <module name="FlatironGames" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="src.FlatironGames" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.FlatironGames" />
+      <module name="FlatironGames" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FlatironGames" />
+        <item itemvalue="Application.src.FlatironGames" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6994b20d-b462-423a-892c-97a0833fc299" name="Changes" comment="" />
+      <created>1657133176973</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657133176973</updated>
+    </task>
+    <servers />
+  </component>
+</project>
