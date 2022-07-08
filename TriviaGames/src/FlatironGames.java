@@ -4,38 +4,32 @@ import java.util.Scanner;
 
 public class FlatironGames {
     public static void main(String[] args) {
-        Map<String, TriviaQuiz> quizzes = new HashMap<>(); // TODO proper type parameters
+        //On my end of things,
+        TriviaQuizFactory myFactory = new TriviaQuizFactory();
 
-        // Add each person's game like this:
-        // TriviaQuiz personsGame = new PersonsTriviaQuiz();
-        // quizzes.put("person", personsTriviaQuiz); // Add each persons quiz like this
-        TriviaQuiz seansGame = new SeansTriviaQuiz();
-        quizzes.put("Sean", seansGame); // Add each person's quiz like this
-
-        try(Scanner scanner = new Scanner(System.in)) {
-            System.out.println("Type \"quit\" to quit playing quizzes.");
-            boolean playingGames = true;
-            while (playingGames) {
-                System.out.println("Whose quiz do you want to play? " + quizzes.keySet());
-                String choice = scanner.nextLine();
-                if (choice.equalsIgnoreCase("quit")){
-                    playingGames = false;
-                } else {
-                    TriviaQuiz chosenQuiz = quizzes.get(choice);
-                    if (chosenQuiz != null) {
-                        while (chosenQuiz.hasNextQuestion()) {
-                            TriviaQuestion thisQuestion = chosenQuiz.getNextQuestion();
-                            thisQuestion.askQuestion();
-                            String answer = scanner.nextLine();
-                            if (thisQuestion.isRight(answer)) {
-                                chosenQuiz.addPoints(1);
-                            }
-                        }
-                        System.out.println("In " + choice + "'s quiz game, you recieved " + chosenQuiz.getTotalScore() + " points!");
-                        System.out.println("Play another quiz?");
+        boolean playingGames = true;
+        Scanner sc = new Scanner(System.in);
+        while (playingGames) {
+            TriviaQuiz chosenQuiz = myFactory.getQuiz(sc);
+            if (chosenQuiz == null) {
+                playingGames = false;
+            } else {
+                //While the chosen quiz has a next question available
+                while (chosenQuiz.hasNextQuestion()) {
+                    //Get the next question from the quiz
+                    TriviaQuestion thisQuestion = chosenQuiz.getNextQuestion();
+                    //Ask this question
+                    thisQuestion.askQuestion();
+                    //get an answer from the user
+                    String answer = sc.nextLine();
+                    //If this question is right for this answer then add 1 point
+                    if (thisQuestion.isRight(answer)) {
+                        chosenQuiz.addPoints(1);
                     }
                 }
+                System.out.println("You received " + chosenQuiz.getTotalScore() + " points!");
             }
+
         }
     }
 }

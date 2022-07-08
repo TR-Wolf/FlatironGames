@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6994b20d-b462-423a-892c-97a0833fc299" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/FlatironGames/FlatironGames.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlatironGames/out/production/FlatironGames/FlatironGames.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlatironGames/out/production/FlatironGames/src/FlatironGames.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlatironGames/out/production/FlatironGames/src/MultipleChoiceTriviaQuestion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlatironGames/out/production/FlatironGames/src/SeansTriviaQuiz.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlatironGames/out/production/FlatironGames/src/TriviaQuestion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlatironGames/out/production/FlatironGames/src/TriviaQuiz.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlatironGames/src/FlatironGames.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlatironGames/src/MultipleChoiceTriviaQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlatironGames/src/SeansTriviaQuiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlatironGames/src/TriviaQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlatironGames/src/TriviaQuiz.java" beforeDir="false" />
-    </list>
+    <list default="true" id="6994b20d-b462-423a-892c-97a0833fc299" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,16 +22,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/wolf/Documents/FlatironGames",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/wolf/Documents/FlatironGames&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.FlatironGames">
     <configuration name="FlatironGames" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FlatironGames" />
