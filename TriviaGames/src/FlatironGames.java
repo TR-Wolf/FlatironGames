@@ -14,25 +14,26 @@ public class FlatironGames {
 
         try(Scanner scanner = new Scanner(System.in)) {
             System.out.println("Type \"quit\" to quit playing quizzes.");
-            while(true) {
+            boolean playingGames = true;
+            while (playingGames) {
                 System.out.println("Whose quiz do you want to play? " + quizzes.keySet());
                 String choice = scanner.nextLine();
                 if (choice.equalsIgnoreCase("quit")){
-                    scanner.close();
-                    System.exit(0);
-                }
-                TriviaQuiz chosenQuiz = quizzes.get(choice);
-                if (chosenQuiz != null) {
-                    while (chosenQuiz.hasNextQuestion()) {
-                        TriviaQuestion thisQuestion = chosenQuiz.getNextQuestion();
-                        thisQuestion.askQuestion();
-                        String answer = scanner.nextLine();
-                        if (thisQuestion.isRight(answer)){
-                            chosenQuiz.addPoints(1);
+                    playingGames = false;
+                } else {
+                    TriviaQuiz chosenQuiz = quizzes.get(choice);
+                    if (chosenQuiz != null) {
+                        while (chosenQuiz.hasNextQuestion()) {
+                            TriviaQuestion thisQuestion = chosenQuiz.getNextQuestion();
+                            thisQuestion.askQuestion();
+                            String answer = scanner.nextLine();
+                            if (thisQuestion.isRight(answer)) {
+                                chosenQuiz.addPoints(1);
+                            }
                         }
+                        System.out.println("In " + choice + "'s quiz game, you recieved " + chosenQuiz.getTotalScore() + " points!");
+                        System.out.println("Play another quiz?");
                     }
-                    System.out.println("In " + choice + "'s quiz game, you recieved " + chosenQuiz.getTotalScore() + " points!");
-                    System.out.println("Play another quiz?");
                 }
             }
         }
