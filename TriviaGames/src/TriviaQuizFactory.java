@@ -12,6 +12,10 @@ public class TriviaQuizFactory {
         // quizzes.put("person", personsTriviaQuiz); // Add each persons quiz like this
         TriviaQuiz seansGame = new SeansTriviaQuiz();
         quizzes.put("Sean", seansGame); // Add each person's quiz like this
+
+        // Maybe we had a trivia game from 20 years ago and it was written very differently
+        // We can apply The Adaptor Pattern to continue to use it in our beautiful new interface-driven code.
+        quizzes.put("Legacy", getLegacyTriviaQuiz());
     }
 
 
@@ -44,5 +48,16 @@ public class TriviaQuizFactory {
         }
         //We should never get here.
         return null;
+    }
+
+    private TriviaQuiz getLegacyTriviaQuiz() {
+        // Create an instance of the legacy trivia game
+        // (Pretend that class was written decades ago)
+        LegacyTriviaGame legacyGame = new LegacyTriviaGame();
+        // The adaptor is like a wrapper around the legacyGame object
+        // Our code can talk to the adaptor object just like it would talk to any other TriviaQuiz (like Sean's or Thomas')
+        // Our code above isn't even aware that the adaptor object is anything other than a normal TriviaQuiz
+        TriviaQuiz adaptedLegacyGame = new LegacyTriviaQuizAdaptor(legacyGame);
+        return adaptedLegacyGame;
     }
 }
